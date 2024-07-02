@@ -1,5 +1,8 @@
 function typeChecker(a, b) {
-  /* Your code here */
+  if (typeof a === typeof b) {
+    return `${a},${b}`;
+  }
+  return 'NOT MATCHED'
 }
 
 //Test cases
