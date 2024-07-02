@@ -1,8 +1,11 @@
 function typeChecker(a, b) {
-  if (typeof a === typeof b) {
-    return `${a},${b}`;
+  if (typeof a === 'string' && typeof b === 'string') {
+      return 'I LOVE YOU';
   }
-  return 'NOT MATCHED'
+  else if (typeof a === 'number' && typeof b === 'number') {
+      return a + b;
+  }
+      return 'NOT MATCHED';
 }
 
 //Test cases

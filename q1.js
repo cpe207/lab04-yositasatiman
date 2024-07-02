@@ -1,6 +1,9 @@
 function typeChecker(a, b) {
-    if (typeof a === typeof b) {
-        return "".concat(a, ",").concat(b);
+    if (typeof a === 'string' && typeof b === 'string') {
+        return 'I LOVE YOU';
+    }
+    else if (typeof a === 'number' && typeof b === 'number') {
+        return a + b;
     }
     return 'NOT MATCHED';
 }
@@ -15,5 +18,4 @@ console.log(typeChecker(a1, b1));
 console.log(typeChecker(a2, b2));
 console.log(typeChecker(a3, b3));
 module.exports = typeChecker;
-
 // Yosita Satiman 660610788?//
